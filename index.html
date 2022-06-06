@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Profile Page Redo</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="top-nav">
+            <h1 class="nav-title">Profile </h1>
+            <ul class="nav-list">
+                <li><a href="#">Home</a></li>
+                <li><a href="#" class="active">My Profile</a></li>
+                <li><a href="#">Find Connections</a></li>
+
+            </ul>
+            <div class="right-side"><button class="button">Sign Out</button></div>
+        </div>
+
+        <div class="row1">
+            <div class="col1">
+
+                <div class="profile-content">
+                    <div class="profile-top-bar"></div>
+                    <div class="profile-details">
+                        <img class="profile-img" height="150px"
+                            src="stock-photo-profile-attractive-african-american-woman.jpeg" alt="Beautiful woman">
+                        <div class="about-me">
+                            <h1 id="user-name">Jane Doe</h1>
+
+                            <div class="nv">
+                                <img class="location-img" height="20px" src="map-marker.png" alt="">
+                                <h3 class="location-name">Las Vegas, Nevada</h3>
+                            </div>
+                            <p>About Me</p>
+                            <p>About Me Again</p>
+                            <div class="settings">
+                                <img class="gear-img" height="20px" src="gear.png" alt="">
+                                <p onclick="change()"><a class="edit-pro-link" href="#">edit profile</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col2">
+
+                <div class="connection-request">
+                    <div class="con-upper-bar"></div>
+                    <div class="con-req-features">
+
+                        <div class="button-and-con">
+                            <button onclick="removeUsers()" class="button2">2</button>
+                            <p class="connect-word">Connection Request</p>
+                        </div>
+                        <div class="friend-request">
+
+                            <div class="tod" id="deny-1">
+                                <img class="tod-img" height="50px" src="todd-s.jpg" alt="Tod Picture">
+                                <p class="tod-nme">Todd E</p>
+                                <a class="accept" href="#"><img height="30px" src="accept-circle.png" alt="accept"></a>
+                                <a onclick="removeUsers('#deny-1')" class="deny" href="#"><img height="30px"
+                                        src="close-circle.png" alt="deny"></a>
+                            </div>
+                            <div class="phil" id="deny-2">
+                                <img class="phil-img" height="50px" src="phil-s.jpg" alt="Phils Picture">
+                                <p class="phil-nme">Phil K</p>
+                                <a class="accept" href="#"><img height="30px" src="accept-circle.png" alt="accept"></a>
+                                <a onclick="removeUsers('#deny-2')" class="deny" href="#"><img height="30px"
+                                        src="close-circle.png" alt="deny"></a>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="row2">
+            <div class="col1">
+
+
+                <div class="education-content">
+                    <div class="ed-up-bar"></div>
+                    <div class="ed-info">
+                        <h2 class="ed-word">Education</h2>
+                        <div class="education-info">
+                            <h3 class="fsb">Full Stack Bootcamp</h3>
+                            <h6 class="date">Date</h6>
+                            <p class="degree">Degree</p>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="col2">
+                <div class="col3">
+
+                    <div class="your-connections">
+                        <div class="top-connect-bar"></div>
+                        <div class="connects">
+                            <div class="top-bar-buttons">
+                                <button class="fiv-hun" id="increase-fiv-hun"
+                                    onclick="increaseYourConnection('#increase-fiv-hun')">500</button>
+                                <a class="connect-link" href="#">Your Connections</a>
+                            </div>
+
+                            <div class="human-connects">
+                                <div class="ad"><img class="ad-img" src="adrien-s.jpg" alt="Adrien D">
+                                    <p>Adrien D</p>
+                                </div>
+                                <div class="aj"><img class="aj-img" src="anne-s.jpg" alt="Anne J">
+                                    <p>Anne J</p>
+                                </div>
+                                <div class="at"><img class="at-img" src="alayne-s.jpg" alt="Alayne T">
+                                    <p>Alayne T</p>
+                                </div>
+                                <div class="ay"><img class="ay-img" src="arry-s.jpg" alt="Arry Y">
+                                    <p>Arry Y</p>
+                                </div>
+                            </div>
+                            <div class="bottom-bar">
+                                <a class="view-more" href="#">View More</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
